@@ -3,3 +3,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  color: #40514e;
+}
+
+p,
+a {
+  font-size: 2rem;
+}
+
+.intro__inner {
+  background-color: rgb(253, 255, 255);
+}
+
+.profile__image {
+  width: 20%;
+  min-width: 200px;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.card__image {
+  width: 15%;
+}

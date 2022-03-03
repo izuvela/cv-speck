@@ -5,13 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Ivan Žuvela</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Libre+Franklin:wght@300&family=Volkhov&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <!-- header with logo -->
     <header class="header">
-        <img src="images/header-logo.png" alt="header logo" class="logo">
+        <div class="header__inner">
+            <img src="images/logos/header-logo.png" alt="header logo" class="logo">
+            <div class="menu">
+                <p class="menu__link">About</p>
+                <!-- TODO: make them glow up -->
+                <img src="images/logos/github.png" alt="github logo" class="menu__link menu__link_logo">
+                <img src="images/logos/linkedin.png" alt="linkedin logo" class="menu__link menu__link_logo">
+            </div>
+        </div>
     </header>
 
     <!-- introduction -->
@@ -21,28 +33,69 @@
                 <h1 class="greeting__title">I'm Ivan</h1>
                 <h2 class="greeting__subtitle">a programmer.</h2>
             </div>
+
             <img src="images/programmer.png" alt="programmer drawing" class="image">
         </div>
     </section>
 
     <!-- about me -->
     <section class="about">
-        <img src="images/Tomislav-profile.jpeg" alt="profile photo" class="image">
-    </section>
+        <div class="profile">
+            <img src="images/Tomislav-profile.jpeg" alt="profile photo" class="profile__image">
+            <h2 class="profile__title">Hello.</h2>
+            <p class="profile__text">My full name is Ivan Žuvela and I come from an island called Korčula. I currently
+                live in Varaždin while I'm studying at Faculty of Organisation and Informatics.</p>
+        </div>
+        <hr class="hr about__hr">
 
+        <!-- hobbies -->
+        <div class="my-hobbies">
+            <div class="hobby">
+                <img src="images/exercise.svg" alt="running man" class="hobby__image">
+                <h3 class="hobby__title">Running</h3>
+                <p class="hobby__text">In highschool I developed an interest in running and have been on a track since.
+                    These days I'm mostly doing weight training while running on the side. My goal is to run one day in
+                    an official half marathon.
+                </p>
+            </div>
+            <div class="hobby">
+                <img src="images/open-book.png" alt="book" class="hobby__image">
+                <h3 class="hobby__title">Reading books</h3>
+                <p class="hobby__text">I enjoy reading adventure and survival books like Robinson Crusoe and 20.000
+                    miles under the sea. Recently I have been in love with Brandon Sandersons high fantasy novels like
+                    The Stormlight Archive.</p>
+            </div>
+        </div>
+    </section>
+    <hr class="hr about__hr">
+
+
+    <!-- I'm interested in Web technologies and Linux (and spending too much time on distro jumping). -->
     <!-- technologies i'm interesed in -->
     <section class="techno">
-
+        <div class="card">
+            <img src="images/logos/html.png" alt="html logo" class="card__image ">
+        </div>
+        <div class="card">
+            <img src="images/logos/css3.png" alt="css logo" class="card__image">
+        </div>
+        <div class="card">
+            <img src="images/logos/node-js.png" alt="node-js logo" class="card__image">
+        </div>
+        <div class="card">
+            <img src="images/logos/arch-linux.png" alt="arch logo" class="card__image">
+        </div>
     </section>
 
     <!-- footer with contact and copyright -->
     <footer class="footer">
-        <p>Contact me: <a href="mailto:izuvela@protonmail.com">izuvela@protonmail.com</a></p>
-        <div class="icons"></div>
-        <a href='https://www.freepik.com/vectors/technology'>Technology vector created by storyset -
-            www.freepik.com</a>
+        <a href="mailto:izuvela@protonmail.com" class="footer__link">izuvela@protonmail.com</a>
+        <p>Icons, logos and icons made by:
+            <a href="https://storyset.com/" class="footer__link">storyset</a>,
+            <a href="https://www.flaticon.com/" class="footer__link">flaticon</a> and
+            <a href="https://www.freepik.com/" class="footer__link">freepik</a>.
+        </p>
     </footer>
-
 </body>
 
 </html>
