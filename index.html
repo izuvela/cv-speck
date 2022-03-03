@@ -12,44 +12,45 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
+<!-- TODO: favicon -->
+
 <body>
     <!-- header with logo -->
     <header class="header">
-        <div class="header__inner">
-            <img src="images/logos/header-logo.png" alt="header logo" class="logo">
-            <div class="menu">
-                <p class="menu__link">About</p>
-                <!-- TODO: make them glow up -->
-                <img src="images/logos/github.png" alt="github logo" class="menu__link menu__link_logo">
-                <img src="images/logos/linkedin.png" alt="linkedin logo" class="menu__link menu__link_logo">
-            </div>
+        <div class="menu">
+            <a href="#about-me">
+                <p class="menu__link">About me</p>
+            </a>
+            <a href="https://github.com/" target="_blank">
+                <img src="images/logos/github.png" alt="github logo" class="menu__link menu__link_icon">
+            </a>
+            <a href="https://hr.linkedin.com/" target="_blank">
+                <img src="images/logos/linkedin.png" alt="linkedin logo" class="menu__link menu__link_icon">
+            </a>
         </div>
     </header>
 
     <!-- introduction -->
     <section class="intro">
-        <div class="intro__inner">
-            <div class="greeting">
-                <h1 class="greeting__title">I'm Ivan</h1>
-                <h2 class="greeting__subtitle">a programmer.</h2>
-            </div>
+        <h1 class="title">I'm Ivan.</h1>
+        <h2 class="subtitle subtitle_intro">a programmer.</h2>
 
-            <img src="images/programmer.png" alt="programmer drawing" class="image">
-        </div>
+        <img src="images/programmer.png" alt="programmer drawing" class="image intro__image">
     </section>
 
     <!-- about me -->
-    <section class="about">
+    <section class="about-me" id="about-me">
         <div class="profile">
             <img src="images/Tomislav-profile.jpeg" alt="profile photo" class="profile__image">
             <h2 class="profile__title">Hello.</h2>
             <p class="profile__text">My full name is Ivan Žuvela and I come from an island called Korčula. I currently
-                live in Varaždin while I'm studying at Faculty of Organisation and Informatics.</p>
+                live in Varaždin while I'm studying at the Faculty of Organisation and Informatics.</p>
         </div>
-        <hr class="hr about__hr">
+        <hr class="hr about-me__hr">
 
         <!-- hobbies -->
         <div class="my-hobbies">
+            <h2 class="subtitle">My hobbies.</h2>
             <div class="hobby">
                 <img src="images/exercise.svg" alt="running man" class="hobby__image">
                 <h3 class="hobby__title">Running</h3>
@@ -67,7 +68,7 @@
             </div>
         </div>
     </section>
-    <hr class="hr about__hr">
+    <hr class="hr about-me__hr">
 
 
     <!-- I'm interested in Web technologies and Linux (and spending too much time on distro jumping). -->
