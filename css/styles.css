@@ -8,6 +8,12 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --darker-green: #10703b;
+  --dark-green: #43a36e;
+  --light-green: #73cd91;
+}
+
 body {
   font-family: "Libre Franklin", sans-serif;
   text-align: center;
@@ -39,7 +45,7 @@ body {
 .menu__link {
   margin: 0 10px 0 10px;
   font-weight: bold;
-  color: #43a46f;
+  color: var(--dark-green);
   font-size: 1.2rem;
 }
 
@@ -57,14 +63,13 @@ body {
 }
 
 .title {
-  color: #43a46f;
+  color: var(--dark-green);
   font-family: "Leckerli One", cursive;
   font-size: 5.625rem;
 }
 
 .subtitle {
-  /* color: #73cd91; */
-  color: #43a46f;
+  color: var(--dark-green);
   font-family: "Volkhov", serif;
   font-size: 2.5rem;
 }
@@ -81,11 +86,28 @@ body {
   margin-top: 50px;
 }
 
+/* about me section */
+
+.about-me {
+  margin-top: 100px;
+}
+
 .profile__image {
   width: 20%;
   min-width: 200px;
   max-width: 300px;
   border-radius: 50%;
+}
+
+.subtitle__profile {
+  margin: 40px 0 40px 0;
+}
+
+.profile__text {
+  margin: 0 auto;
+  font-size: 1.3rem;
+  max-width: 400px;
+  line-height: 2;
 }
 
 .hr {
@@ -101,9 +123,38 @@ body {
   margin: 100px auto 100px auto;
 }
 
+/* hobbies */
+
+.hobby {
+  width: 40%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.hobby__image {
+  width: 25%;
+}
+
+.hobby__image_exercise {
+  float: left;
+  margin-right: 30px;
+}
+
+.hobby__image_book {
+  float: right;
+  margin-left: 30px;
+}
+
 .hobby__title {
-  color: #11999e;
+  color: var(--darker-green);
   font-family: "Volkhov", serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.hobby__text {
+  font-size: 1.3rem;
 }
 
 .card__image {
