@@ -12,6 +12,7 @@ html {
   --darker-green: #10703b;
   --dark-green: #43a36e;
   --light-green: #73cd91;
+  --background: #d9f1dd;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
   height: 10vh;
   width: 100%;
   padding-right: 10px;
-  background-color: #d9f1dd;
+  background-color: var(--background);
   display: flex;
   justify-content: right;
   align-items: center;
@@ -59,7 +60,7 @@ body {
 .intro {
   height: 90vh;
   width: 100%;
-  background-color: #d9f1dd;
+  background-color: var(--background);
 }
 
 .title {
@@ -157,6 +158,30 @@ body {
   font-size: 1.3rem;
 }
 
-.card__image {
-  width: 15%;
+/* technologies */
+
+.techno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
 }
+
+.card {
+  background-color: var(--background);
+  padding: 20px;
+  border-radius: 10%;
+  margin: 0 20px;
+  height: 300px;
+  width: 300px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__image {
+  height: 200px;
+}
+
+/* footer */
