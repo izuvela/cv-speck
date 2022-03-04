@@ -25,7 +25,6 @@ body {
 
 .header {
   height: 10vh;
-  width: 100%;
   padding-right: 10px;
   background-color: var(--background);
   display: flex;
@@ -35,19 +34,21 @@ body {
 
 .menu {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
 }
 
-.menu a {
-  text-decoration: none;
-}
-
 .menu__link {
-  margin: 0 10px 0 10px;
+  margin: 0 10px;
   font-weight: bold;
   color: var(--dark-green);
   font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.menu__link:hover {
+  color: var(--darker-green);
 }
 
 .menu__link_icon {
@@ -100,7 +101,7 @@ body {
   border-radius: 50%;
 }
 
-.subtitle__profile {
+.profile__subtitle {
   margin: 40px 0 40px 0;
 }
 
@@ -168,7 +169,6 @@ body {
 }
 
 .card {
-  /* background-color: var(--background); */
   padding: 20px;
   border: 1px solid var(--dark-green);
   border-radius: 10%;
@@ -200,16 +200,20 @@ body {
   flex-direction: column;
 }
 
+.footer__row {
+  margin: 20px 0;
+}
+
 .footer__link {
   color: var(--darker-green);
   text-decoration: none;
 }
 
-.footer__link_email {
-  font-size: 1.3rem;
+.footer__link:hover {
   font-weight: bold;
 }
 
-.footer__row {
-  margin: 20px 0;
+.footer__link_email {
+  font-size: 1.3rem;
+  font-weight: bold;
 }
