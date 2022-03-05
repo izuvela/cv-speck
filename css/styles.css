@@ -25,7 +25,6 @@ body {
 
 .header {
   height: 50px;
-  /* height: 8vh; */
   background-color: var(--background);
 }
 
@@ -226,10 +225,6 @@ body {
   color: var(--darker-green);
   font-family: "Volkhov", serif;
   margin-bottom: 10px;
-}
-
-.hobby__text {
-  /* font-size: 1rem; */
 }
 
 /* tablet screen (768px) */
