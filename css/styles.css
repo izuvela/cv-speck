@@ -122,7 +122,6 @@ body {
 
   .subtitle {
     color: var(--dark-green);
-    font-family: "Volkhov", serif;
     font-size: 2.5rem;
   }
 }
